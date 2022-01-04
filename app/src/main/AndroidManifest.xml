@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoToEsig">
         <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.GoToEsig.NoActionBar" />
+        <activity
             android:name=".LaunchActivity"
             android:exported="true">
             <intent-filter>
@@ -21,7 +25,6 @@
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
-
         <activity
             android:name=".LogInActivity"
             android:exported="false" />

@@ -1,4 +1,4 @@
-package com.example.essaidrawer.ui.gallery;
+package com.example.gotoesig.ui.gallery;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,8 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.essaidrawer.R;
-import com.example.essaidrawer.databinding.FragmentGalleryBinding;
+import com.example.gotoesig.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment {
 

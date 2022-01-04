@@ -1,4 +1,4 @@
-package com.example.essaidrawer.ui.home;
+package com.example.gotoesig.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,8 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.essaidrawer.R;
-import com.example.essaidrawer.databinding.FragmentHomeBinding;
+import com.example.gotoesig.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 

@@ -53,7 +53,7 @@ public class LogInActivity extends AppCompatActivity {
                                     comptor++ ;
                                     if(doc.getData().get("passwd").equals(passwd)) {
                                         //"Log in success");
-                                        Intent nextIntent =new Intent(LogInActivity.this, HomeActivity.class) ;
+                                        Intent nextIntent =new Intent(LogInActivity.this, MainActivity.class) ;
                                         startActivity(nextIntent);
                                     }
                                     else {

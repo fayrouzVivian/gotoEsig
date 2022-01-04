@@ -1,4 +1,4 @@
-package com.example.essaidrawer.ui.gallery;
+package com.example.gotoesig.ui.gallery;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

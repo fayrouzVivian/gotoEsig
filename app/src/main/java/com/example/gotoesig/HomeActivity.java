@@ -13,7 +13,7 @@ public class HomeActivity extends AppCompatActivity {
 
         //UsersControllers.getUserById("QKi6KPUVbHCOZG1hGxZv");
         //UsersControllers.getAllUsers("fairouz.ligali@gmail.com");
-        UsersControllers.checkCredentials("fairouz.ligali@gmail.com", "123aze456");
+        //UsersControllers.checkCredentials("fairouz.ligali@gmail.com", "123aze456");
 
     }
 }

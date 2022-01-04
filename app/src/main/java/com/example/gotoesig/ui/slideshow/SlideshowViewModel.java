@@ -1,4 +1,4 @@
-package com.example.essaidrawer.ui.slideshow;
+package com.example.gotoesig.ui.slideshow;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
