@@ -19,14 +19,14 @@ import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
-public class ConnectionActivity extends AppCompatActivity {
+public class LogInActivity extends AppCompatActivity {
 
     static FirebaseFirestore db = FirebaseFirestore.getInstance() ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_connection);
+        setContentView(R.layout.activity_log_in);
 
         EditText mailFieldTxt = findViewById(R.id.mailField) ;
         EditText passwdFieldTxt = findViewById(R.id.passwdField) ;
@@ -38,7 +38,7 @@ public class ConnectionActivity extends AppCompatActivity {
                 String mail = mailFieldTxt.getText().toString(), passwd = passwdFieldTxt.getText().toString();
 
                 if (mail == null || mail.equals("") || passwd == null || passwd.equals("")) {
-                    Toast.makeText(ConnectionActivity.this, "All credentials are needed", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LogInActivity.this, "All credentials are needed", Toast.LENGTH_LONG).show();
                 } else {
                     // Create a reference to the users collection
                     CollectionReference usersRef = db.collection("users") ;
@@ -53,21 +53,21 @@ public class ConnectionActivity extends AppCompatActivity {
                                     comptor++ ;
                                     if(doc.getData().get("passwd").equals(passwd)) {
                                         //"Log in success");
-                                        Intent nextIntent =new Intent(ConnectionActivity.this,MainActivity.class) ;
+                                        Intent nextIntent =new Intent(LogInActivity.this, HomeActivity.class) ;
                                         startActivity(nextIntent);
                                     }
                                     else {
                                         //"Error ! Wrong password"
-                                        Toast.makeText(ConnectionActivity.this, "Wrong password ! Try again", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(LogInActivity.this, "Wrong password ! Try again", Toast.LENGTH_LONG).show();
                                     }
                                 }
                                 if(comptor==0) {
                                     //"There is no user with this email"
-                                    Toast.makeText(ConnectionActivity.this, "No adress email found ! Try again or Sign up !", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(LogInActivity.this, "No adress email found ! Try again or Sign up !", Toast.LENGTH_LONG).show();
                                 }
                             }
                             else {
-                                Toast.makeText(ConnectionActivity.this, "An error occured", Toast.LENGTH_LONG).show();
+                                Toast.makeText(LogInActivity.this, "An error occured", Toast.LENGTH_LONG).show();
                                 Log.d("Appi", "Erreur : " + task.getException() ) ;
                             }
                         }
