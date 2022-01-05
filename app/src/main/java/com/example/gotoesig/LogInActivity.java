@@ -22,8 +22,9 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 public class LogInActivity extends AppCompatActivity {
 
-    static FirebaseFirestore db = FirebaseFirestore.getInstance() ;
     static public String user_id  ;
+    static public String user_score ;
+    static public String user_mail ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,7 @@ public class LogInActivity extends AppCompatActivity {
                     Toast.makeText(LogInActivity.this, "All credentials are needed", Toast.LENGTH_LONG).show();
                 } else {
                     // Create a reference to the users collection
-                    CollectionReference usersRef = db.collection("users") ;
+                    CollectionReference usersRef = LaunchActivity.db.collection("users") ;
                     //Get if exists, the unique user with this mail
                     Query query = usersRef.whereEqualTo("email", mail) ;
                     query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -56,6 +57,9 @@ public class LogInActivity extends AppCompatActivity {
                                     if(doc.getData().get("passwd").equals(passwd)) {
                                         //"Log in success");
                                         user_id = doc.getId() ;
+                                        user_score = "Score : "+doc.getData().get("score").toString() ;
+                                        user_mail = doc.getData().get("email").toString() ;
+
                                         Intent nextIntent =new Intent(LogInActivity.this, MainActivity.class) ;
                                         startActivity(nextIntent);
                                     }

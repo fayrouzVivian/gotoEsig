@@ -13,6 +13,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.gotoesig.databinding.ActivityMainBinding;
+import com.example.gotoesig.ui.profil.ProfilViewModel;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -26,11 +27,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-/*
-        TextView tvU = findViewById(R.id.user_id) ;
-        user_id = tvU.getText().toString() ;*/
 
         setSupportActionBar(binding.appBarMain.toolbar);
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
@@ -42,16 +41,24 @@ public class MainActivity extends AppCompatActivity {
         });
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
+        View headView = navigationView.getHeaderView(0) ;
+        TextView tv = headView.findViewById(R.id.tv_usermail) ;
+        tv.setText(LogInActivity.user_mail);
+        tv=headView.findViewById(R.id.tv_userscore) ;
+        tv.setText(LogInActivity.user_score);
+
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_profil,
-                R.id.nav_addTrip, R.id.nav_allTrips,R.id.nav_findTrip, R.id.nav_rateTrip, R.id.nav_stats , R.id.nav_exit)
+                R.id.nav_add_trip, R.id.nav_trips,R.id.nav_find_trip, R.id.nav_rate_trip, R.id.nav_statistiques , R.id.nav_exit)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
     }
 
     @Override

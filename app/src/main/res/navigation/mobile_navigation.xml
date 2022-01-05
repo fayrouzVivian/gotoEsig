@@ -12,27 +12,27 @@
         tools:layout="@layout/fragment_profil" />
 
     <fragment
-        android:id="@+id/nav_addTrajet"
+        android:id="@+id/nav_add_trip"
         android:name="com.example.gotoesig.ui.add_trip.Add_tripFragment"
         android:label="Add a trip"
-        tools:layout="@layout/fragment_addTrip" />
+        tools:layout="@layout/fragment_add_trip" />
     <fragment
-        android:id="@+id/nav_trajets"
+        android:id="@+id/nav_trips"
         android:name="com.example.gotoesig.ui.trips.TripsFragment"
         android:label="My trips"
-        tools:layout="@layout/fragment_trajets" />
+        tools:layout="@layout/fragment_trips" />
     <fragment
-        android:id="@+id/nav_chercher"
+        android:id="@+id/nav_find_trip"
         android:name="com.example.gotoesig.ui.find_trip.Find_tripFragment"
         android:label="Find a trip"
-        tools:layout="@layout/fragment_findTrip" />
+        tools:layout="@layout/fragment_find_trip" />
     <fragment
-        android:id="@+id/nav_eval"
+        android:id="@+id/nav_rate_trip"
         android:name="com.example.gotoesig.ui.rate_trip.Rate_tripFragment"
         android:label="Rate a trip"
-        tools:layout="@layout/fragment_rateTrip" />
+        tools:layout="@layout/fragment_rate_trip" />
     <fragment
-        android:id="@+id/nav_stats"
+        android:id="@+id/nav_statistiques"
         android:name="com.example.gotoesig.ui.statistiques.StatistiquesFragment"
         android:label="Statistiques"
         tools:layout="@layout/fragment_statistiques" />

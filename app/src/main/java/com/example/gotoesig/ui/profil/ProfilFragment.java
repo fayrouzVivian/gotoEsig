@@ -9,8 +9,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+
+
 
 import com.example.gotoesig.databinding.FragmentProfilBinding;
 
@@ -30,49 +33,52 @@ public class ProfilFragment extends Fragment {
         binding = FragmentProfilBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView tVNom= binding.tvNom;
-        final TextView tVPrenom= binding.tvPrenom;
-        final TextView tVTel=binding.tvTel;
-        final TextView tVVille= binding.tvVille;
-        final TextView tVScore= binding.tvScore;
+        final TextView city = binding.tvCT;
+        final TextView email = binding.tvEM;
+        final TextView firstName = binding.tvFN;
+        final TextView lastName = binding.tvLN;
+        final TextView phone = binding.tvPN;
+        final TextView score = binding.tvSC;
 
 
-        profilViewModel.getNom().observe(getViewLifecycleOwner(), new Observer<String>() {
+
+        profilViewModel.getCity().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                tVNom.setText(s);
+                city.setText(s);
             }
         });
-        profilViewModel.getPrenom().observe(getViewLifecycleOwner(), new Observer<String>() {
+        profilViewModel.getEmail().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                tVPrenom.setText(s);
+                email.setText(s);
             }
         });
-        profilViewModel.getTel().observe(getViewLifecycleOwner(), new Observer<String>() {
+        profilViewModel.getFirstName().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                tVTel.setText(s);
+                firstName.setText(s);
             }
         });
-        profilViewModel.getTel().observe(getViewLifecycleOwner(), new Observer<String>() {
+        profilViewModel.getLastName().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                tVTel.setText(s);
+                lastName.setText(s);
             }
         });
-        profilViewModel.getVille().observe(getViewLifecycleOwner(), new Observer<String>() {
+        profilViewModel.getPhone().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                tVVille.setText(s);
+                phone.setText(s);
             }
         });
         profilViewModel.getScore().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                tVScore.setText(s);
+                score.setText(s);
             }
         });
+
         return root;
     }
     @Override

@@ -9,10 +9,11 @@
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/activity_log_in.xml" value="0.259375" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/activity_main.xml" value="0.259375" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/activity_main_old.xml" value="0.20878623188405798" />
-        <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
+        <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/activity_sign_up.xml" value="0.6" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/ajout_trajet_fragment.xml" value="0.259375" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/app_bar_main.xml" value="0.259375" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/chercher_trajet_fragment.xml" value="0.259375" />
+        <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/commande.xml" value="0.259375" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/content_main.xml" value="0.259375" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/content_main_old.xml" value="0.259375" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/fragment_addTrip.xml" value="0.13385416666666666" />
@@ -23,6 +24,7 @@
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/fragment_rateTrip.xml" value="0.259375" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/fragment_statistiques.xml" value="0.259375" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/fragment_trajets.xml" value="0.259375" />
+        <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/fragment_trips.xml" value="0.259375" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/header.xml" value="0.259375" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/header_old.xml" value="0.13385416666666666" />
         <entry key="..\:/Users/fayrouz/AndroidStudioProjects/gotoEsig/app/src/main/res/layout/nav_header_main.xml" value="0.259375" />

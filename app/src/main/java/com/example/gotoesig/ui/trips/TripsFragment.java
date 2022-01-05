@@ -23,7 +23,7 @@ public class TripsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_trajets, container, false);
+        return inflater.inflate(R.layout.fragment_trips, container, false);
     }
 
     @Override

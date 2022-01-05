@@ -9,23 +9,23 @@
             android:icon="@drawable/ic_menu_profil"
             android:title="Profil" />
         <item
-            android:id="@+id/nav_addTrip"
+            android:id="@+id/nav_add_trip"
             android:icon="@drawable/ic_menu_ajouter_trajet"
             android:title="Add a trip" />
         <item
-            android:id="@+id/nav_allTrips"
+            android:id="@+id/nav_trips"
             android:icon="@drawable/ic_menu_trajets"
             android:title="My trips" />
         <item
-            android:id="@+id/nav_findTrip"
+            android:id="@+id/nav_find_trip"
             android:icon="@drawable/ic_menu_chercher_trajet"
             android:title="Find a trip" />
         <item
-            android:id="@+id/nav_rateTrip"
+            android:id="@+id/nav_rate_trip"
             android:icon="@drawable/ic_menu_evaluer_trajet"
             android:title="Rate a trip" />
         <item
-            android:id="@+id/nav_stats"
+            android:id="@+id/nav_statistiques"
             android:icon="@drawable/ic_menu_statistiques"
             android:title="Statistiques" />
         <item

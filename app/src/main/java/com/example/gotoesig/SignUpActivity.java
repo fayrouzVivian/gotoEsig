@@ -26,8 +26,6 @@ import java.util.Map;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    static FirebaseFirestore db = FirebaseFirestore.getInstance() ;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +55,7 @@ public class SignUpActivity extends AppCompatActivity {
                     }
                     else {
                         // Create a reference to the users collection
-                        CollectionReference usersRef = db.collection("users") ;
+                        CollectionReference usersRef = LaunchActivity.db.collection("users") ;
                         //Check if the mails is already taken by an unique user
                         Query query = usersRef.whereEqualTo("email", mail) ;
                         query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -75,7 +73,7 @@ public class SignUpActivity extends AppCompatActivity {
                                         newUser.put("lastName", lastName) ;
                                         newUser.put("passwd", passwd) ;
 
-                                        db.collection("users").document().set(newUser)
+                                        LaunchActivity.db.collection("users").document().set(newUser)
                                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                                     @Override
                                                     public void onSuccess(Void unused) {
