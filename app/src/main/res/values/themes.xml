@@ -19,8 +19,8 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.EssaiDrawer.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.GoToEsig.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.EssaiDrawer.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.GoToEsig.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

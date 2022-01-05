@@ -22,7 +22,7 @@ public class MainActivity_old extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view) ;
+        /*final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view) ;
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -77,6 +77,6 @@ public class MainActivity_old extends AppCompatActivity {
             }
         };
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
-        actionBarDrawerToggle.syncState();
+        actionBarDrawerToggle.syncState();*/
     }
 }

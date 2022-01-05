@@ -22,16 +22,17 @@
     <!--app:srcCompat="@drawable/ic_menu_profil"-->
 
     <TextView
-        android:id="@+id/tv_username"
+        android:id="@+id/tv_usermail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Firstname Lastname"
+        android:text="karl@gmail.com"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
-        android:id="@+id/tv_usermail"
+        android:id="@+id/tv_userscore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="karl@gmail.com" />
+        android:text="Score : 50" />
+
 </LinearLayout>

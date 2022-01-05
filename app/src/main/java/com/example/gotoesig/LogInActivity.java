@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,6 +23,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 public class LogInActivity extends AppCompatActivity {
 
     static FirebaseFirestore db = FirebaseFirestore.getInstance() ;
+    static public String user_id  ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,7 @@ public class LogInActivity extends AppCompatActivity {
                                     comptor++ ;
                                     if(doc.getData().get("passwd").equals(passwd)) {
                                         //"Log in success");
+                                        user_id = doc.getId() ;
                                         Intent nextIntent =new Intent(LogInActivity.this, MainActivity.class) ;
                                         startActivity(nextIntent);
                                     }

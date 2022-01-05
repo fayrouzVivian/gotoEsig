@@ -3,24 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_profil">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.gotoesig.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_profil"
+        android:name="com.example.gotoesig.ui.profil.ProfilFragment"
+        android:label="Profil"
+        tools:layout="@layout/fragment_profil" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.gotoesig.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_addTrajet"
+        android:name="com.example.gotoesig.ui.add_trip.Add_tripFragment"
+        android:label="Add a trip"
+        tools:layout="@layout/fragment_addTrip" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.gotoesig.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_trajets"
+        android:name="com.example.gotoesig.ui.trips.TripsFragment"
+        android:label="My trips"
+        tools:layout="@layout/fragment_trajets" />
+    <fragment
+        android:id="@+id/nav_chercher"
+        android:name="com.example.gotoesig.ui.find_trip.Find_tripFragment"
+        android:label="Find a trip"
+        tools:layout="@layout/fragment_findTrip" />
+    <fragment
+        android:id="@+id/nav_eval"
+        android:name="com.example.gotoesig.ui.rate_trip.Rate_tripFragment"
+        android:label="Rate a trip"
+        tools:layout="@layout/fragment_rateTrip" />
+    <fragment
+        android:id="@+id/nav_stats"
+        android:name="com.example.gotoesig.ui.statistiques.StatistiquesFragment"
+        android:label="Statistiques"
+        tools:layout="@layout/fragment_statistiques" />
 
 </navigation>
